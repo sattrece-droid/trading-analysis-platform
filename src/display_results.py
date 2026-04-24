@@ -12,7 +12,7 @@ from trading_analysis import TradingAnalyzer
 from narrative_analysis import TradingNarrative
 from market_performance import MarketPerformance
 
-load_dotenv('.env.trading')
+load_dotenv(os.path.join(os.path.dirname(__file__), '..', '.env.trading'))
 
 DB_HOST = os.getenv('DB_HOST')
 DB_PORT = os.getenv('DB_PORT')

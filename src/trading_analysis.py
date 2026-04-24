@@ -19,7 +19,7 @@ try:
 except:
     YFINANCE_AVAILABLE = False
 
-load_dotenv('.env.trading')
+load_dotenv(os.path.join(os.path.dirname(__file__), '..', '.env.trading'))
 
 # API Keys
 ALPHA_VANTAGE_KEY = os.getenv('ALPHA_VANTAGE_KEY')

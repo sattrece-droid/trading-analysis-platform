@@ -11,7 +11,7 @@ from datetime import datetime
 import os
 from dotenv import load_dotenv
 
-load_dotenv('.env.trading')
+load_dotenv(os.path.join(os.path.dirname(__file__), '..', '.env.trading'))
 
 app = Flask(__name__)
 
